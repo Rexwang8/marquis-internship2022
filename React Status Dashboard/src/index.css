@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: Avenir Book;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  font-size: 1.75vh;
+}
+
+code {
+  font-family: Avenir Book;
+}
+@font-face {
+  font-family: Avenir Book;
+  src: url(../src/assets/fonts/avenir-book.woff);
+}
+
+:root {
+  --backgroundcolor: #003856;
+  --contrastcolor: #1e1e2d;
+  --textcolor1: #529AC2;
+  --textcolor2: #959595;
+  --textcolor3: #455257;
+}

@@ -1,0 +1,1284 @@
+.App {
+  text-align: center;
+}
+.Messages p {
+  word-wrap: normal;
+  white-space: pre-wrap;
+  color: var(--textcolor2);
+}
+@media only screen and (min-width: 800px) {
+  .ptitle
+{
+  margin: 0;
+  font-size: 1.8vh;
+}
+  .Aspect {
+    aspect-ratio: 16/9;
+    height: 100vh;
+    background-image: url(./assets/images/sg-blueish-20opacity.png);
+    background-color: rgba(30, 30, 45, 1);
+
+    
+    background-size: contain;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+    overflow-y: hidden;
+  }
+
+  .leftwrapper {
+    float: left;
+    height: 70%;
+    width: 40%;
+  }
+  .rightwrapper {
+    float: left;
+    height: fit-content;
+    width: 58%;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 1%;
+    
+  }
+
+  .Messages {
+    color: var(--textcolor2);
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 2%;
+    margin-left: 6%;
+    margin-right: 6%;
+    background-color: var(--contrastcolor);
+    padding: 3.5%;
+    padding-top: 2%;
+    min-width: 80%;
+  }
+
+  .StatusWrapper {
+    margin: 0.5vmin;
+    background-color: var(--contrastcolor);
+    color: var(--textcolor2);
+    float: left;
+    width: 95%;
+  }
+
+  .StatusWrapper img {
+    height: 1.5vh;
+  }
+
+  .MessagesWrapper {
+    border: 1px solid red;
+    margin: 1vw;
+    padding: 1vw;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .leftstatus {
+    float: left;
+    width: 33.3%;
+    height: 80vh;
+  }
+
+  .middlestatus {
+    float: left;
+    width: 33.3%;
+    height: 80vh;
+  }
+
+  .rightstatus {
+    float: left;
+    width: 33.3%;
+    height: 80vh;
+  }
+
+  .statusAdminBar img {
+    height: 2.25vh;
+    margin: 0.1vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .editorWrapper {
+    margin: 2vw;
+  }
+
+  .editorContentWrapper {
+    background-color: white;
+    height: 14vh;
+    width: 80%;
+    border: 3px solid red;
+    padding: 1vw;
+    margin: 0.5vw;
+  }
+
+  .adminNameEditorWrapper {
+    background-color: white;
+    height: 3vh;
+    width: 80%;
+    border: 3px solid red;
+    padding: 1vw;
+    margin: 0.5vw;
+  }
+
+  .colLeft {
+    float: left;
+    width: calc(100% / 3);
+    height: auto;
+  }
+  
+  .colMiddle {
+    float: left;
+    width: calc(100% / 3);
+    height: auto;
+  }
+  .colRight {
+    float: left;
+    width: calc(100% / 3);
+    height: auto;
+  }
+
+  .logoWrapper img{
+    margin-top: 4vh;
+    width: 90%;
+    height: auto;
+  }
+  .prodsg
+  {
+    height: 8%;
+    margin: 2vh;
+  }
+  
+}
+@media only screen and (max-width: 799px) {
+
+  .prodsg
+{
+  height: 6%;
+  margin: 1.5vh;
+}
+  .ptitle
+{
+  margin: 0;
+  font-size: 1.5vh;
+}
+
+  .Aspect {
+    height: 100vh;
+    background-color: var(--contrastcolor);
+    justify-content: center;
+    background-image: url(./assets/images/sg-blueish-20opacity.png);
+    background-size: contain;
+    margin: auto;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  .Messages {
+    color: var(--textcolor2);
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 2vmin;
+    background-color: var(--contrastcolor);
+    padding: 3vh;
+    padding-top: 2vh;
+    min-width: 85%;
+    font-size: calc(2.75vmin);
+  }
+
+  .messageUW
+  {
+    display: flex;
+  }
+
+  .StatusWrapper {
+    margin: 0.5vmin;
+    margin-left: 2vw;
+    background-color: var(--contrastcolor);
+    color: var(--textcolor2);
+    float: unset;
+    font-size: calc(2.25vmin);
+    padding: 1vw;
+  }
+
+  .StatusWrapper img {
+    height: 1.25vh;
+  }
+
+  .MessagesWrapper {
+    border: 1px solid red;
+    margin: 1vw;
+    padding: 1vw;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .leftstatus {
+    float: left;
+    width: 30vw;
+    height: 60vh;
+  }
+
+  .middlestatus {
+    float: left;
+    width: 30vw;
+    height: 60vh;
+  }
+
+  .rightstatus {
+    float: left;
+    width: 30vw;
+    height: 60vh;
+  }
+
+  .statusAdminBar img {
+    height: 1.5vh;
+    margin: 0.1vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  .editorWrapper {
+    margin: 2vw;
+    width: fit-content;
+    font-size: calc(3vmin);
+  }
+
+  .editorContentWrapper {
+    background-color: white;
+    height: 20vh;
+    width: 90vw;
+    border: 3px solid red;
+    padding: 1vw;
+    margin: 0.5vw;
+  }
+
+  .adminNameEditorWrapper {
+    background-color: white;
+    height: 3vh;
+    width: 90vw;
+    border: 3px solid red;
+    padding: 1vw;
+    margin: 0.5vw;
+  }
+
+  .logoWrapper img{
+    margin-top: 3vh;
+    width: 75%;
+    height: auto;
+  }
+}
+
+.rightwrapper hr {
+  padding-top: 3vh;
+  visibility: hidden;
+}
+
+.StatusTileWrapper p {
+  
+  font-weight: bold;
+}
+
+.statusAdminBar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0.6vw;
+  padding: 0.2vh;
+  border: 3px solid var(--backgroundcolor);
+  border-radius: 20%;
+}
+
+.adminverify {
+  color: red;
+  margin: 0;
+}
+
+.message_info
+{
+  font-size: small;
+}
+
+
+
+.logoWrapper {
+  height: 17vh;
+  width: 100%;
+  border: 0.25vh solid var(--backgroundcolor);
+
+  align-items: center;
+}
+
+
+
+.prodWrapper {
+  height: 33vh;
+  width: 100%;
+  border: 0.25vh solid var(--backgroundcolor);
+  border-top: 0.25vh solid var(--backgroundcolor);
+}
+
+.valuesWrapper {
+  height: 49.75vh;
+  width: 100%;
+  border: 0.25vh solid var(--backgroundcolor);
+  border-top: 0.25vh solid var(--backgroundcolor);
+}
+
+.EOMWrapper {
+  height: 33.25vh;
+  width: 100%;
+  border: 0.25vh solid var(--backgroundcolor);
+  border-left: 0.25vh solid var(--backgroundcolor);
+}
+
+.TwitterWrapper {
+  height: 35vh;
+  width: 100%;
+  border: 0.25vh solid var(--backgroundcolor);
+  border-top: 0.25vh solid var(--backgroundcolor);
+  border-left: 0.25vh solid var(--backgroundcolor);
+  overflow: hidden;
+}
+
+.NewsWrapper {
+  height: 31.75vh;
+  width: 100%;
+  border: 0.25vh solid var(--backgroundcolor);
+  border-top: 0.25vh solid var(--backgroundcolor);
+  border-left: 0.25vh solid var(--backgroundcolor);
+}
+
+.WeatherWrapper {
+  height: 50vh;
+  width: 100%;
+  border: 0.25vh solid var(--backgroundcolor);
+  border-top: 0.25vh solid var(--backgroundcolor);
+}
+
+.RadarWrapper {
+  height: 27vh;
+  width: 100%;
+  border: 0.25vh solid var(--backgroundcolor);
+  border-top: 0.25vh solid var(--backgroundcolor);
+}
+
+.SpotWrapper {
+  height: 22.75vh;
+  width: 100%;
+  background-color: var(--backgroundcolor);
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: auto auto;
+  grid-column-gap: 1%;
+  grid-row-gap: 1%;
+  color: var(--textcolor3);
+  border: 0.25vh solid var(--backgroundcolor);
+  border-top: 0.25vh solid var(--backgroundcolor);
+}
+
+.Spotbox
+{
+    margin: 0.25vh;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.Spotbox2
+{
+    margin: 0.25vh;
+    margin-left: 0;
+    margin-right: 0;
+    color: #838383;
+}
+
+.spot
+{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  
+}
+
+.spot_odometer .spot_odometer-inside .spot_odometer-digit:last-child {
+  display: none;
+}
+
+.spot_number-wrapper {
+  font-size: 3vh;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  /* margin-bottom: 0.25rem; */
+  flex: 2;
+  align-items: center;
+}
+
+.spot_units {
+  font-size: 1.6vh;
+  font-weight: 700;
+  text-align: center;
+  flex: 1;
+}
+
+.boxtitle {
+  font-size: 2.8vh;
+  color: #73bf45;
+  font-weight: 600;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.core_ {
+  margin: 0 0.35rem 0.65rem 0.35rem;
+  text-align: left;
+}
+
+.core_title {
+  font-size: 2.4vh;
+  margin-bottom: 0.4vh;
+  color: #73bf45;
+  font-weight: 600;
+  margin-left: 0.5vw;
+}
+
+.core_desc {
+  margin-bottom: 2.5vh;
+  font-size: 1.8vh;
+  line-height: 2vh;
+  color: var(--textcolor2);
+  margin-left: 0.5vw;
+}
+
+.figureContainer {
+  
+  color: var(--textcolor2);
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 0.75rem; /* to compensate for the title block above it */
+}
+
+.ProductionFigure {
+  flex: 0 0 48%;
+  z-index: 10;
+}
+
+.ProductionFigure_odometer .ProductionFigure_odometer-inside .ProductionFigure_odometer-digit:last-child {
+  display: none;
+}
+
+.ProductionFigure_rate {
+  position: relative;
+  text-align: center;
+}
+
+.ProductionFigure_number-wrapper {
+  margin-top: 2.5vh;
+  display: flex;
+  font-size: 7.5vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProductionFigure_unit {
+  margin-top: 2.5vh;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.ProductionFigure_suffix {
+  position: relative;
+  top: -0.05rem;
+}
+
+.EmployeeOfTheMonth
+{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  color: #333;
+  background-color: #73bf45;
+  text-align: left;
+  /* border-top: 0.1rem solid black; */
+height: 8.3vh;
+ 
+}
+.EmployeeOfTheMonth:nth-child(even) {
+  background-color: #32a8df;
+}
+
+.EmployeeOfTheMonth_photo {
+  flex: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.EmployeeOfTheMonth_designation {
+  flex: 6;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 0.8rem;
+}
+
+.EmployeeOfTheMonth_designation .EmployeeOfTheMonth_name {
+  margin-top: 0.23rem;
+  font-size: 3vh;
+}
+
+.EmployeeOfTheMonth_designation .EmployeeOfTheMonth_title {
+  font-size: 2vh;
+  margin-bottom: 0.23rem;
+}
+
+.TwitterDisp
+{
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.TwitterDisp_icon {
+  opacity: 0.1;
+  transition: opacity 3s ease-in-out;
+  height: 35vh;
+}
+.TwitterDisp_icon .TwitterDisp_dim {
+  opacity: 0.05;
+}
+
+.TwitterDisp_panel-body {
+  text-align: center;
+}
+.TweetScroller
+{
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  text-align: left;
+  animation-name: scroll;
+  animation-duration: 1300s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  color: var(--textcolor2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.TweetScroller_tweet {
+  margin-bottom: 3vh;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  padding: 0 0.5rem;
+}
+
+.TweetScroller_img-container{
+  text-align: center;
+  box-shadow: 0.4rem 0.4rem 0.4rem #222;
+  margin-top: 2vh;
+}
+.TweetScroller_img
+{
+  
+  max-width: 95%; 
+  height: auto;
+}
+
+.TweetScroller_profile-img
+{
+  max-width: 5%; 
+  height: auto;
+  box-shadow: 0.4rem 0.4rem 0.4rem #222;
+  margin-bottom: 1.2vh;
+}
+.TweetScroller_account
+{
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+
+.TweetScroller_text
+{
+  font-size: 2.5vh;
+  line-height: 3vh;
+}
+
+.headline
+{
+  margin-top: 0;
+  margin-left: 2%;
+  flex: 1;
+  text-align: left;
+}
+
+
+  .headline_title {
+    margin-top: 0;
+    font-size: 2vh;
+    line-height: 2.5vh;
+    margin-bottom: 0.1rem;
+    color: #3694c0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .headline_content {
+    color: var(--textcolor2);
+    font-size: 1.4vh;
+    line-height: 2vh;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    max-height: 5vh;
+  }
+
+  .source {
+    color: var(--textcolor2);
+    flex: 0 0 auto;
+    padding-right: 0.25vw;
+    padding-bottom: 025vw;
+    font-size: 1.3vh;
+    order: 100;
+    text-align: right;
+  }
+
+
+  .weather{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: auto;
+    padding: 0.5rem;
+    flex-direction: column;
+    color: var(--textcolor2);
+    margin-top: 3vh;
+  }
+  
+
+  .weather_forecast {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.35vh;
+    height: 4.3vh;
+  }
+  .weather_forecast .weather_low {
+    color: #626262;
+  }
+  .weather_forecast > div {
+    flex: 1;
+    text-align: center;
+  }
+  .weather_current {
+    display: flex;
+    flex-direction: row;
+    height: 18vh;
+  }
+  .weather_current > div {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .weather_forecast .weather_weekday {
+    text-align: right;
+  }
+  .weather_forecast .weather_conditions img {
+    height: 3vh;
+  }
+
+  .weather_current .weather_temp-wrapper {
+    flex-direction: row;
+    font-size: 13vh;
+
+    display: flex;
+    justify-content: center;
+    flex: 2;
+    align-items: center;
+  }
+
+  .weather_current .weather_conditions img {
+    height: 14vh;
+    align-self: center;
+  }
+
+  .HeatIndex
+{
+  font-size: 2.5vh;
+  background-color: red;
+  border: 0.6vmin solid darkred;
+  color: white;
+  text-align: center;
+  margin-left: 0.8vw;
+  margin-right: 1.2vw;
+  font-weight: bold;
+}
+
+.radar{
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.radar_img .radar_radar-image {
+    position: absolute;
+    top: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .radar_frameTime {
+    font-weight: bold;
+    color: #ddd;
+    position: absolute;
+    bottom: 0;
+    left: 0.25rem;
+    z-index: 10;
+    text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
+    font-size: 1.5vh;
+  }
+
+  .radar_you-are-here {
+    font-size: 1.5vh;
+    color: yellow;
+    font-weight: bold;
+    position: absolute;
+   
+    z-index: 10;
+    text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
+    font-size: 0.45rem;
+  }
+
+  .radar_hennepin {
+    top: 43%;
+    left: 47%;
+    font-size: 1.4vh;
+  }
+
+  .radar_necedah {
+    top: 25%;
+    left: 35%;
+    font-size: 1.4vh;
+
+  }
+
+  .signinwrapper
+  {
+    margin: auto;
+    margin-top: 10%;
+    height: 15vh;
+    
+    
+  }
+
+  .signinTitle
+  {
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    line-height: 12vh;
+    display: block;
+    background-color: var(--contrastcolor);
+    width: 50%;
+    height: 12vh;
+    border: 1px solid red;
+  }
+
+
+
+  /* General button style */
+.btn{
+  margin: 0.5vh;
+  padding: 1vh;
+  font-family: Avenir Book;
+  font-size: x-large;
+  background-color: var(--textcolor2);
+}
+
+.btn:hover{
+  background-color: #434f53;
+}
+
+.btn:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+.btn:focus{
+  background-color: #363e41;
+}
+
+
+.odometer .odometer-inside .odometer-digit:last-child {
+    display: none
+}
+
+.hide{
+  visibility: hidden;
+
+}
+
+.btn-close {
+  box-sizing: content-box;
+  width: 1.25em;
+  height: 1.25em;
+  padding: 0.25em 0.25em;
+  color: rgb(0, 0, 0);
+  
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1.2em auto no-repeat;
+  border: 1px solid red;
+  border-radius: 0.25rem;
+  opacity: 0.5;
+}
+.btn-close:hover {
+  color: #000;
+  text-decoration: none;
+  opacity: 0.75;
+}
+.btn-close:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  opacity: 1;
+}
+.btn-close:disabled, .btn-close.disabled {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  opacity: 0.25;
+}
+
+.btn-close-white {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1055;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 0.5rem;
+  pointer-events: none;
+}
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+  transform: translate(0, -50px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .modal.fade .modal-dialog {
+    transition: none;
+  }
+}
+.modal.show .modal-dialog {
+  transform: none;
+}
+.modal.modal-static .modal-dialog {
+  transform: scale(1.02);
+}
+
+.modal-dialog-scrollable {
+  height: calc(100% - 1rem);
+}
+.modal-dialog-scrollable .modal-content {
+  max-height: 100%;
+  overflow: hidden;
+}
+.modal-dialog-scrollable .modal-body {
+  overflow-y: auto;
+}
+
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 1rem);
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+}
+.modal-backdrop.show {
+  opacity: 0.5;
+}
+
+.modal-header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+.modal-header .btn-close {
+  padding: 0.5rem 0.5rem;
+  margin: -0.5rem -0.5rem -0.5rem auto;
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+.modal-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.75rem;
+  border-top: 1px solid #dee2e6;
+  border-bottom-right-radius: calc(0.3rem - 1px);
+  border-bottom-left-radius: calc(0.3rem - 1px);
+}
+.modal-footer > * {
+  margin: 0.25rem;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+  }
+
+  .modal-dialog-scrollable {
+    height: calc(100% - 3.5rem);
+  }
+
+  .modal-dialog-centered {
+    min-height: calc(100% - 3.5rem);
+  }
+
+  .modal-sm {
+    max-width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-lg,
+.modal-xl {
+    max-width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-xl {
+    max-width: 1140px;
+  }
+}
+.modal-fullscreen {
+  width: 100vw;
+  max-width: none;
+  height: 100%;
+  margin: 0;
+}
+.modal-fullscreen .modal-content {
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+}
+.modal-fullscreen .modal-header {
+  border-radius: 0;
+}
+.modal-fullscreen .modal-body {
+  overflow-y: auto;
+}
+.modal-fullscreen .modal-footer {
+  border-radius: 0;
+}
+
+@media (max-width: 575.98px) {
+  .modal-fullscreen-sm-down {
+    width: 100vw;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+  }
+  .modal-fullscreen-sm-down .modal-content {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+  .modal-fullscreen-sm-down .modal-header {
+    border-radius: 0;
+  }
+  .modal-fullscreen-sm-down .modal-body {
+    overflow-y: auto;
+  }
+  .modal-fullscreen-sm-down .modal-footer {
+    border-radius: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .modal-fullscreen-md-down {
+    width: 100vw;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+  }
+  .modal-fullscreen-md-down .modal-content {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+  .modal-fullscreen-md-down .modal-header {
+    border-radius: 0;
+  }
+  .modal-fullscreen-md-down .modal-body {
+    overflow-y: auto;
+  }
+  .modal-fullscreen-md-down .modal-footer {
+    border-radius: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .modal-fullscreen-lg-down {
+    width: 100vw;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+  }
+  .modal-fullscreen-lg-down .modal-content {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+  .modal-fullscreen-lg-down .modal-header {
+    border-radius: 0;
+  }
+  .modal-fullscreen-lg-down .modal-body {
+    overflow-y: auto;
+  }
+  .modal-fullscreen-lg-down .modal-footer {
+    border-radius: 0;
+  }
+}
+@media (max-width: 1199.98px) {
+  .modal-fullscreen-xl-down {
+    width: 100vw;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+  }
+  .modal-fullscreen-xl-down .modal-content {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+  .modal-fullscreen-xl-down .modal-header {
+    border-radius: 0;
+  }
+  .modal-fullscreen-xl-down .modal-body {
+    overflow-y: auto;
+  }
+  .modal-fullscreen-xl-down .modal-footer {
+    border-radius: 0;
+  }
+}
+@media (max-width: 1399.98px) {
+  .modal-fullscreen-xxl-down {
+    width: 100vw;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+  }
+  .modal-fullscreen-xxl-down .modal-content {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+  .modal-fullscreen-xxl-down .modal-header {
+    border-radius: 0;
+  }
+  .modal-fullscreen-xxl-down .modal-body {
+    overflow-y: auto;
+  }
+  .modal-fullscreen-xxl-down .modal-footer {
+    border-radius: 0;
+  }
+}
+
+.colBox
+{
+  height: 100vh;
+}
+
+.colBox2
+{
+  border: 0.3vw solid var(--backgroundcolor);
+  height: 100%;
+  margin: 0.4vw;
+}
+
+.SProductionFigure {
+  flex: 0 0 48%;
+  z-index: 10;
+  color: var(--textcolor2);
+}
+
+.SProductionFigure_odometer .SProductionFigure_odometer-inside .SProductionFigure_odometer-digit:last-child {
+  display: none;
+}
+
+.SProductionFigure_rate {
+  position: relative;
+  text-align: center;
+}
+
+.SProductionFigure_number-wrapper {
+  display: flex;
+  font-size: 1.5vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.SProductionFigure_unit {
+  margin-top: 2vh;
+  font-size: 1vh;
+  text-align: center;
+}
+
+.SProductionFigure_suffix {
+  position: relative;
+}
+
+.textGrid
+{
+  color: var(--textcolor2);
+  font-size: 1.8vh;
+  font-weight: bold;
+}
+
+.textGrid_hr{
+
+  background-color: var(--textcolor2);
+}
+
+
+
+.GaugeTitle
+{
+  color: white;
+  font-size: 3vh;
+}
+
+.dpgauge
+{
+  background-color: white;
+  color: #000;
+  margin: auto;
+  margin-top: 1vh;
+  width: 10vw;
+  text-align: left;
+  
+}
+
+.dptxt
+{
+  font-size: 2.5vh;
+  margin: 0.5vh;
+}
+
+.evaptable
+{
+  margin-top: 6vh;
+  height: 60vh;
+}
+.evapfooter
+{
+  margin-top: 4vh;
+  height: 4vh;
+  background-color: #73bf45;
+}
+.evapwhitebox
+{
+  background-color: white;
+  color: #000;
+  margin: auto;
+  margin-top: 1vh;
+  width: 4vw;
+  text-align: center;
+  font-size: 3vh;
+}
+
+.statustile
+{
+  font-size: 1.5vh;
+  margin: 1vh;
+}
+
+.statustiletitle
+{
+  font-size: 2.2vh;
+  color: var(--textcolor2);
+}
+
